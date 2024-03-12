@@ -101,7 +101,7 @@ servidor.use((error,peticion,respuesta,siguiente)=>{
 
 servidor.use((peticion,respuesta)=>{
 
-    respuesta.status(400)
+    respuesta.status(404)
     respuesta.json({error: "recurso no encontrado"})
 })
 
