@@ -69,7 +69,7 @@ servidor.post("/colores/nuevo",async(peticion,respuesta,siguiente)=>{
 
 
     
- //aqui valido que lo que me estan mandando en el cuerpo de la peticion exista, 
+ //aqui valido que lo que me estan mandando en el cuerpo de la peticion exista, y lo mando al error de abajo
     siguiente({error:"faltan parametros"})
 });
 
