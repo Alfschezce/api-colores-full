@@ -69,7 +69,7 @@ servidor.post("/colores/nuevo",async(peticion,respuesta,siguiente)=>{
 
 
     
- 
+ //aqui valido que lo que me estan mandando en el cuerpo de la peticion exista, 
     siguiente({error:"faltan parametros"})
 });
 
@@ -91,7 +91,7 @@ servidor.delete("/colores/borrar/:id([a-f0-9]{24})", async(peticion,respuesta)=>
 });
 
 
-
+//si no existe lo que me estan mandando en el cuerpo de la peticion paso aqui
 servidor.use((error,peticion,respuesta,siguiente)=>{
 
     respuesta.status(400)
