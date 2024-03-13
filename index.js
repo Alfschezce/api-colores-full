@@ -98,7 +98,7 @@ servidor.use((error,peticion,respuesta,siguiente)=>{
     respuesta.json({error:"error en la peticion"})
 });
 
-
+ //cuando la url esta mal por ejemplo /hola o por ejemplo peticion post a /colores
 servidor.use((peticion,respuesta)=>{
 
     respuesta.status(404)
