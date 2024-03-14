@@ -1,4 +1,4 @@
-const  express =require("express");//me gtraigo express
+const  express =require("express");//me traigo express
 const{json} =require("body-parser");//me traigo json
 
 const cors =require("cors")
@@ -42,7 +42,7 @@ servidor.get("/colores",async(peticion,respuesta)=>{
 
 
 });
-
+// la api esta esperando un objeto que traiga r,g,b
 servidor.post("/colores/nuevo",async(peticion,respuesta,siguiente)=>{
 
     let {r,g,b} = peticion.body
