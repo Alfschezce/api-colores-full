@@ -12,7 +12,7 @@ servidor.use(cors())//usamos cors
 servidor.use(json());//para extraer el cuerpo de la peticion
 
 
-//servidor.use("/mentirillas",express.static("./pruebas"));//mentirillas apunta a la carpeta pruebas
+servidor.use("/mentirillas",express.static("./pruebas"));//mentirillas apunta a la carpeta pruebas
 
 
 
