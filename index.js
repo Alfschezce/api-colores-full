@@ -78,7 +78,7 @@ servidor.delete("/colores/borrar/:id([a-f0-9]{24})", async(peticion,respuesta)=>
     try{
         let cantidad = await borrarColor(peticion.params.id);
         
-        return respuesta.json({resultado :cantidad  ? "ok" : "ko"});
+        return respuesta.json({resultado :cantidad > 0 ? "ok" : "ko"});
 
     }catch(error){
 
